@@ -11,10 +11,7 @@ class Solution {
                  freq[left]--;
                  start++;
             }  
-            int len = end-start+1;
-            if(len>maxlen) {
-                maxlen = len;
-            }
+            maxlen = Math.max(maxlen,end-start+1);
         }
         return maxlen;
     }
