@@ -13,10 +13,7 @@ class Solution {
                 }
                 left++;
             }
-            int len = right-left+1;
-            if(len > maxlen) {
-                maxlen = len;
-            }
+            maxlen = Math.max(maxlen,right-left+1);
         }
         return maxlen;
     }
